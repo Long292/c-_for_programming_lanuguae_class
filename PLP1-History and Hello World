@@ -5,7 +5,20 @@ This  is my repo for learning c++ in programming language course
    My language name is C ++ 
 2. When/where was it created, and by whom? Was it written to address a particular problem or need?
    It was created in 1985 by Bjarne Stroustrup. It was written as an extension of C programming language
-3. What types of programming is your language primarily used for (ex: web sites, video games, mobile devices, parsing, etc.)? If your language is multi-purpose, provide some examples of different projects it's been used for.
-   C++ is a multi-purpose programming language, which is applied in desktop applications (Adobe systems such as Illustrator, Photoshop,..), video games (CSGO, League of Legends, PUBG, Call of Duty), servers core of e-commerse, web search or databases (Firstfox, google applications, MySQL) and performance-critical applications such as operating Systems (Apple OS, Microsoft Windows OS), banking applications (Infosys Finacle)
-5. Where will you get information about this language when it's time to start programming in it? At the end of your assignment, provide a list of the names of books, website URLs, or any other resources that relate to your language in particular.
-  I will mainly learn C++ from w3school which is always most used platform of mine for other language. Besides that there is another free course named "C++ tutorial for complete beginners" on Udemy, which is also my learning resource
+3. What types of programming is your language primarily used for (ex: web sites, video games, mobile devices, parsing, etc.)? 
+   If your language is multi-purpose, provide some examples of different projects it's been used for.
+   C++ is a multi-purpose programming language, which is applied in desktop applications (Adobe systems such as Illustrator, Photoshop,..), 
+   video games (CSGO, League of Legends, PUBG, Call of Duty), servers core of e-commerse, web search or databases (Firstfox, google applications, MySQL) 
+   and performance-critical applications such as operating Systems (Apple OS, Microsoft Windows OS), banking applications (Infosys Finacle)
+5. Where will you get information about this language when it's time to start programming in it? At the end of your assignment, provide a list of the names of books, 
+   website URLs, or any other resources that relate to your language in particular.
+   I will mainly learn C++ from w3school which is always most used platform of mine for other language. Besides that there is another free course named "C++ tutorial 
+   for complete beginners" on Udemy, which is also my learning resource
+
+
+To install the language, we need to have an IDE that have the language package we wwant to install. In my case, I choose Visual studio which has package C/C++. 
+Then I need to install the compiler for C ++ named msys2 so that I we can run C++ on our device.
+C++ has another recommended IDE that is Visual Studio, but due to some reasons I could not run HelloWorld on this IDE. 
+Therefore I have chosen Visual studio which is more familiar to me to be my IDE. To run program in C++, we just need to write program and run it by the key combination 
+Crtl + Alt + N. But before that, we need to write a complete program which contains the header (#include <iostream>) and main component (int main()) 
+ 
