@@ -1,0 +1,35 @@
+1. Does your language have keywords or reserved words? How many?
+ Yes, C++ has 44 keywords and 95 reserved words 
+ 2. What are the naming requirements for variables in your language?
+ C++ naming requirements for variables are:
+ - Must be identified with unique names aka identifiers.
+ - It can be short names (a, b, c,...) or more descriptive names like (gender, school, studentNumber)
+ - It can contain letters, digits and underscores
+ - It must begin with a letter or an underscore
+ - It is case sensitive
+ - It can not contain whitespaces or special character
+ - It can not be reserved words
+What about naming conventions?  Are those enforced by the compiler/interpreter or just standards in the community?
+ C++ uses CamelCase for naming conventions
+ The class name should be a noun meanwhile method and function name should begin with a verb
+
+ It is mainly standard of community but there is also some conventions enforced by the compiler:
+ - The first character in the class name must be upper case.
+ - No underscores are permitted in the class name.
+ 
+3. Is your language statically or dynamically typed?
+ C++ is a statically typed language 
+4. Strongly typed or weakly typed?
+ It is weally typed language
+5. Explicitly typed or implicitly typed? 
+ It is explicitly typed language
+6. Are some variables mutable while others are immutable? 
+ Yes, except for const is immutable all other objects are mutable in c++.
+8. Are mixed type operations allowed? If so, how are they accommodated?
+ Yes, it is allowed in C++. When a variable does not have the same type as the result of the operation, the value of the variables is cinverted to the tye of the result and the operation is performed.
+9. At what point are identifier names and operator symbols bound in your language? For example if you declare a (variable, class name, function name), when is it bound to the type, address? When are operators (+,*, etc.) bound to their operations?
+Identifier names and operator symbols bound in early binding process meanwhile virtual function bound un late-binding process.
+10. Describe the limitations (or lack thereof) of your programming language as they relate to the coding example portion of the assignment (adding ints and floats, storing different types in lists, converting between data types). Are there other restrictions or pitfalls that the documentation mentions that you need to be aware of?
+We can use mixed-type operations in c++. Due to that, the type of result maybe changes differently from the type of operation. Besides that, we cannot store different types in lists and convert between data types.
+11. Are there built-in complex data types that are commonly used in your language? 
+In c++, we alsohave a pointer which is used to point to the address of the variable allocate.
