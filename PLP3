@@ -26,7 +26,18 @@ int a = 5, b=7, c=7;
     }
 Because the else statement is counted for the inner if then the result to cout is nothing because the if condition (a>5) failed without any else statement.  
 6. If your language supports switch or case statements, do you have to use “break” to get out of them? Can you use “continue” to have all of the conditions evaluated?
-Yes, in c++ we need to use break to get out of switch or case statements. And we are also able to use “continue” to have all of the conditions evaluated
+Yes, in c++ we need to use break to get out of switch or case statements. And we are also able to use “continue” to have all of the conditions evaluated.
+EX: switch (something)
+    {
+    case A:
+    case B:
+        break;
+    default:
+        // get another something and try again
+        continue;
+    }
+    // do something for a handled something
+    do_something();
 
 2. PROGRAMMING PART
 
