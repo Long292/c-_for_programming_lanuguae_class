@@ -1,3 +1,36 @@
+1. WRITING PART
+What are the boolean values in your language? (e.g., True and False, true and false, 1, and 0, etc.)
+		The boolean value in C++: true and false | 1 and 0
+2. What types of conditional statements are available in your language? (if/else, if/then/else, if/elseif/else).  Does your language allow for statements other than “if” (for example, Perl has an “unless” statement, which does the opposite of “if”!)
+The type of conditional statements are available in C++:
+if/ else
+if/ else if/ else 
+Switch
+3. How does your language delimit code blocks under each condition in selection control statements?
+	In C++, the code block is delimited under each condition in the selection control statement by moving from one to another code depending on whether a particular condition is sastified or not.
+	4. Does your language use short-circuit evaluation? Include an example of the short-circuit logic working or not working (or both, if your language is like Java and supports both!)
+	Yes, C++ supports short-circuit evaluation 
+	Ex:
+	int u = -3, i = 10;
+    if(u>0 && i >0){
+        std::cout << "both two numbers are bigger than zero" << endl;
+    }
+	5. How does your programming language deal with the “dangling else” problem?
+	It will prioritize counting the else for the inner if for example we have the below code:
+int a = 5, b=7, c=7;
+    if (a>5)
+    if(b>6){
+        std::cout << "alo";
+    }else{
+        std::cout << "olo";
+    }
+Because the else statement is counted for the inner if then the result to cout is nothing because the if condition (a>5) failed without any else statement.  
+6. If your language supports switch or case statements, do you have to use “break” to get out of them? Can you use “continue” to have all of the conditions evaluated?
+Yes, in c++ we need to use break to get out of switch or case statements. And we are also able to use “continue” to have all of the conditions evaluated
+
+2. PROGRAMMING PART
+
+
 #include <iostream>
 using std::endl;
 int main(){
