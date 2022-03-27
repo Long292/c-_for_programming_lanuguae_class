@@ -1,0 +1,52 @@
+#include <iostream>
+using std::endl;
+int main(){
+    //a one-condition if/else statement (i.e. "if x == true")
+
+    bool x = true;
+    if(x==true){
+        std::cout << "True" << endl;
+    };
+    //a multi-condition if/else statement (i.e. "if x>0 && y< 10)
+
+    int a = 3, b = 10;
+    if(a>0 && b <20){
+        std::cout << a + b << endl;
+    }
+    //if/elif/else statements
+    int z = 6;
+    if(z>3){
+        std::cout << "z is bigger than 3" << endl;
+    }else if (z<3){
+        std::cout << "z is smaller than 3" << endl;
+    }else {
+        std::cout << "z is equal 3" << endl;
+    }
+    //short-circuit logic
+    int u = -3, i = 10;
+    if(u>0 && i >0){
+        std::cout << "both two numbers are bigger than zero" << endl;
+    }
+    if(u>0 || i >0){
+        std::cout << "there is at least one number bigger than 0" << endl;
+    }
+    //a switch-case statement
+    int s=10;
+    switch(s){
+    case 0:
+        std::cout << "bad" << endl;
+        break;
+    case 5:
+        std::cout << "moderate" << endl;
+        break;
+    case 10:
+        std::cout << "excellent" << endl;
+        break;
+    default:
+        std::cout << "Point" <<endl;
+        break;
+    }
+
+
+    return 0;
+}
