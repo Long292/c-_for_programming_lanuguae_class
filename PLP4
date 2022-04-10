@@ -1,0 +1,144 @@
+//Coding part
+#include <iostream>
+#include <string>
+using namespace std;
+
+int multiplier(int a, int b)
+{
+    return a * b;
+}
+int factorial (int a){
+    if(a>0){
+        return a*factorial(a-1);
+    }
+    else{
+        return 1;
+    }
+
+}
+int plus1 (int a){
+    a = a + 1;
+    return a;
+}
+string stringSplitter( string str){
+    string str1, str2;
+    for(int i = 0; i<(int)str.size()/2; i++){
+        str1 += str[i];
+        str2 += str[str.size()/2+i];
+    }
+    return (string)"String 1: " + str1 + (string)" String 2: " + str2;
+}
+
+int main()
+{
+    int i = 5;
+    int j =10;
+    int arr[] = {5, 6, 7, 8, 9};
+    string str = "abcdef";
+    int temp;
+    int value = 5;
+    cout<<"While"<<endl;
+    while (i<10){
+        cout<<i<<endl;
+        i = i+1;
+    }
+    cout<<endl;
+    cout<<"Do/While"<<endl;
+    do{
+        cout<<j<<endl;
+        j = j-1;
+    }
+    while (j>5);
+    cout<<"For"<<endl;
+    for (int k = 0; k < 5; k++) {
+        cout << k << endl;
+    }
+    cout<<endl;
+    cout<<"Foreach"<<endl;
+    for(int l: arr){
+        cout<<l<<endl;
+    }
+    cout<<endl;
+
+    cout<<"A function that takes in two numbers, multiplies them, and returns the output"<<endl;
+    cout<<multiplier(5,6)<<endl;
+    cout<<endl;
+
+    cout<<"A recursive function"<<endl;
+    cout<<factorial(12)<<endl;
+    cout<<endl;
+
+    cout<<"A function that takes in a string and splits it into two strings, then returns both strings"<<endl;
+    cout<<stringSplitter(str)<<endl;
+    cout<<endl;
+
+    cout<<"Call your functions and save the results of the function calls in variables"<<endl;
+    temp = factorial(12);
+    cout<<temp<<endl;
+    cout<<endl;
+
+    cout<<"a function that tests whether my language is pass-by-reference or pass-by-value."<<endl;
+    plus1(value);
+    if (value == plus1(value)){
+        cout<<"C++ is passing by reference by default"<<endl;
+    }else{
+        cout<<"C++ is passing by value by default"<<endl;
+    }
+    return 0;
+}
+
+//Answering part
+
+1.	Does your language include multiple types of loops (while, do/while, for, foreach)? If so, what are they and how do they differ from each other?
+C++ inlcude many multipe types of loops:
+-	While: when the specified condition is reached, the while loop will execute a block of code until the condition is not sastified.
+while (condition) {
+  // code block to be executed
+}
+-	Do/ while: the loop will execute the code block once then checking if the condtion is sastified or not and repeat the loop if true.
+do {
+  // code block to be executed
+}
+while (condition);
+-	For: for exactly n times defined in the for statement, the code block will be executed by the for loop.
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+-	Foreach: different from for loop that will execute the loop n times, foreach will execute the code block for each elements of an array 
+int arr = {1,2,3}
+for (int i: arr){
+// code block to be executed
+}
+
+
+2.	What is the syntax for declaring a function in your language?
+dataType functionName(parameter1, parameter2){
+// code block to be executed
+}
+
+3.	Are there any rules about where the function has to be placed in your code file so that it can run?
+Yes, C++ require to place the function properly to run it. Particulalrly, we need to declared the function before calling the function name.
+4.	Does your language support recursive functions?
+Yes, C++ support recursive functions. And here is an example of recursive functions in C++ that calculate the factorial of number a.
+
+int factorial (int a){
+    if(a>0){
+        return a*factorial(a-1);
+    }
+    else{
+        return 1;
+    }
+}
+
+5.	Can functions in your language accept multiple parameters? Can they be of different data types?
+C++ can accept multiple parameters. And it can be of different data types. For example the following functions is runnable: 
+
+void test(int a, string b){
+    cout<<a<<b;
+}
+
+6.	Can functions in your language return multiple values at the same time? How is that implemented?  If not, are there ways around that problem?  What are they?
+
+C++ can not return multiple values at the same time.
+But we can make many unofficial way to implement it. For example: using std:: pair, std::tuple to return multiple values or adding multiple values into one String and return that string.
+
